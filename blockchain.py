@@ -58,6 +58,7 @@ class Blockchain(object):
 
 
 app = Flask(__name__)
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 node_identifier = str(uuid4()).replace('-', '')
 blockchain = Blockchain()
 
